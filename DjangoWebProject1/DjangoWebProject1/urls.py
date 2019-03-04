@@ -5,8 +5,10 @@ Definition of urls for DjangoWebProject1.
 from django.conf.urls import include, url
 
 # Uncomment the next two lines to enable the admin:
-# from django.contrib import admin
-# admin.autodiscover()
+from django.contrib import admin
+from django.urls import path
+from DjangoWebProject1 import views
+admin.autodiscover()
 
 urlpatterns = [
     # Examples:
@@ -17,5 +19,9 @@ urlpatterns = [
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    # url(r'^admin/', include(admin.site.urls)),
+    #url('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
+    path('gogo/',views.pylinkweb),
+    path('fv/',views.deposits),
+    path('result/',views.result),
 ]

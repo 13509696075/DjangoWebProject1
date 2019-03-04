@@ -30,6 +30,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DjangoWebProject1\views.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="manage.py" />
     <Compile Include="DjangoWebProject1\__init__.py" />
     <Compile Include="DjangoWebProject1\settings.py" />
@@ -37,10 +40,16 @@
     <Compile Include="DjangoWebProject1\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DjangoWebProject1\static\DjangoWebProject1\E_10_1.css" />
     <Content Include="requirements.txt" />
+    <Content Include="DjangoWebProject1\Templates\E_10_1.html" />
+    <Content Include="DjangoWebProject1\static\DjangoWebProject1\E_10_1.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DjangoWebProject1\" />
+    <Folder Include="DjangoWebProject1\Templates\" />
+    <Folder Include="DjangoWebProject1\static\" />
+    <Folder Include="DjangoWebProject1\static\DjangoWebProject1\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
